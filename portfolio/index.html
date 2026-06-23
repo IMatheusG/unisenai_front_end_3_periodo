@@ -316,7 +316,7 @@
                         <textarea name="assunto" placeholder="Gostaria de um orçamento para uma Dashboard!" rows="4" required></textarea>
                     </div>
                     <div class="col100 columns">
-                        <input type="submit" value="Enviar">
+                        <button type="button" id="enviar">Enviar</button>
                     </div>
                 </form>
             </section> 
@@ -324,40 +324,11 @@
         <footer>
             Matheus Gabriel Souza Thimoteo - 2026
         </footer>
-        <style>
-            
-            div:where(.swal2-container).swal2-bottom-end>.swal2-popup, div:where(.swal2-container).swal2-bottom-right>.swal2-popup{    
-                border-left: 10px solid rgb(50, 205, 50) !important;
-                display: grid;
-                background: #121212 !important;
-                box-shadow: 0 0 14px #00a86b !important;
-            }
-            .swal2-toast .swal2-icon.swal2-success .swal2-success-ring{
-                background: rgb(50, 205, 50) !important;
-                z-index: 1 !important;
-            }
-            .swal2-toast .swal2-success .swal2-success-fix{
-                display: none;
-            }
-            div:where(.swal2-icon).swal2-success [class^=swal2-success-line], div:where(.swal2-icon).swal2-success [class^=swal2-success-line]{
-                background-color: green !important;
-            }
-            .swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left], .swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{
-                background: #121212 !important;
-            }
-            div:where(.swal2-container) div:where(.swal2-timer-progress-bar){
-                background:  #121212;
-            }
-        </style>
         <script>
             document.addEventListener("DOMContentLoaded", function(){
-                urlParams = new URLSearchParams(window.location.search);
-                submit = urlParams.get('submit'); 
-
-                if (submit) {
+                document.getElementById('enviar').addEventListener('click', function (){
                     mostrarAlerta('sucesso', 'Formulário Enviado!', 'O formulário de contato foi enviado com sucesso!');
-                    window.history.replaceState({}, document.title, window.location.pathname);
-                }                       
+                })          
             })
         </script>
     </body>

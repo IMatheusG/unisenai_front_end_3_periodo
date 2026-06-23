@@ -476,7 +476,7 @@ form input:focus, form textarea:focus{
 textarea{
     resize: block;
 }
-form input[type="submit"]{
+form button{
     width: auto;
     background-color: #00a86a7c;
     color: #ccc;
@@ -484,9 +484,10 @@ form input[type="submit"]{
     cursor: pointer;
     box-shadow: 0 0 24px #00a86a7c;
     padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
 }
 
-input[type="submit"]:hover{
+button:hover{
     cursor: pointer;
     font-weight: 600;
     background-color: #00a86b;
@@ -507,6 +508,28 @@ footer{
     border-top: 1px solid #00a86b;
 }
 
+div:where(.swal2-container).swal2-bottom-end>.swal2-popup, div:where(.swal2-container).swal2-bottom-right>.swal2-popup{    
+    border-left: 10px solid rgb(50, 205, 50) !important;
+    display: grid;
+    background: #121212 !important;
+    box-shadow: 0 0 14px #00a86b !important;
+}
+.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{
+    background: rgb(50, 205, 50) !important;
+    z-index: 1 !important;
+}
+.swal2-toast .swal2-success .swal2-success-fix{
+    display: none;
+}
+div:where(.swal2-icon).swal2-success [class^=swal2-success-line], div:where(.swal2-icon).swal2-success [class^=swal2-success-line]{
+    background-color: green !important;
+}
+.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left], .swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{
+    background: #121212 !important;
+}
+div:where(.swal2-container) div:where(.swal2-timer-progress-bar){
+    background:  #121212;
+}
 
 @media (max-width: 900px){
     nav{
