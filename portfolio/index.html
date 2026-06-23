@@ -307,13 +307,13 @@
                 <form action="index.html?submit=1" method="POST">
                     <div class="col100 columns"><h2>Entre em contato comigo!</h2></div>
                     <div class="col50 columns">Nome<br/>
-                        <input type="text" name="nome" placeholder="João da Silva" required>
+                        <input type="text" name="nome" id="nome" placeholder="João da Silva" required>
                     </div>
                     <div class="col50 columns">E-mail<br/>
-                        <input type="email" name="email" placeholder="joaosilva@gmail.com" required>
+                        <input type="email" name="email" id="email" placeholder="joaosilva@gmail.com" required>
                     </div>
                     <div class="col100 columns">Assunto<br/>
-                        <textarea name="assunto" placeholder="Gostaria de um orçamento para uma Dashboard!" rows="4" required></textarea>
+                        <textarea name="assunto" id="assunto" placeholder="Gostaria de um orçamento para uma Dashboard!" rows="4" required></textarea>
                     </div>
                     <div class="col100 columns">
                         <button type="button" id="enviar">Enviar</button>
@@ -327,7 +327,11 @@
         <script>
             document.addEventListener("DOMContentLoaded", function(){
                 document.getElementById('enviar').addEventListener('click', function (){
-                    mostrarAlerta('sucesso', 'Formulário Enviado!', 'O formulário de contato foi enviado com sucesso!');
+                    if (document.getElementById('email').value != '' && document.getElementById('nome') != '' && document.getElementById('assunto') != ''){
+                        mostrarAlerta('sucesso', 'Formulário Enviado!', 'O formulário de contato foi enviado com sucesso!');
+                    } else {
+                        mostrarAlerta('erro', 'Preencha todos os campos!', 'Preencha todos os campos para enviar o formulario!');
+                    }
                 })          
             })
         </script>
