@@ -327,7 +327,7 @@
         <script>
             document.addEventListener("DOMContentLoaded", function(){
                 document.getElementById('enviar').addEventListener('click', function (){
-                    if (document.getElementById('email').value != '' && document.getElementById('nome') != '' && document.getElementById('assunto') != ''){
+                    if (document.getElementById('email').value != '' && document.getElementById('nome').value != '' && document.getElementById('assunto').value != ''){
                         mostrarAlerta('sucesso', 'Formulário Enviado!', 'O formulário de contato foi enviado com sucesso!');
                     } else {
                         mostrarAlerta('erro', 'Preencha todos os campos!', 'Preencha todos os campos para enviar o formulario!');
