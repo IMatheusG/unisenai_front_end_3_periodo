@@ -1,0 +1,90 @@
+body{            
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: #fffacc;           
+}
+header{
+    background-image: url(../../src/receita/torta_limao_backS.png);
+    background-repeat: repeat;
+    background-size: auto;
+    position: fixed;
+    height: 40px;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+footer{
+    background-image: url(../../src/receita/torta_limao_backI.png);
+    background-repeat: repeat;
+    background-size: auto;
+    position: fixed;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+main{
+    padding: 3rem 2rem;
+    max-width: 800px;
+}
+.img_lateral{            
+    width: 140px;
+    min-width: 140px;
+    background-image: url(../../src/cabecalho/cabecalhos_back.png);
+    background-repeat: repeat;
+    background-size: auto;
+}        
+h1{
+    color: #5d4600;
+}
+h2,h3,h4,h5,h6{
+    color: #d4a000;
+}
+p{
+    text-indent: 32px;
+}
+hr{            
+    border: 2px solid #d4a000
+}
+.aviso{
+    padding: 0.5rem 1rem; 
+    background-color: #d4a000;
+    color: white;                    
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.receita{
+    background-color: #a8d060;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 1rem 0px;
+}
+ul{
+    margin: 0px;
+    list-style: none;
+}
+i{
+    width: 17px;
+    height: 17px;
+    display: block;
+}
+li{            
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 0px;
+}
+.receita ul > li > i{
+    background-image: url(../../src/receita/torta_limao_item1.gif);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.receita ul > ul > li > i{
+    background-image: url(../../src/receita/torta_limao_item2.gif);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.receita ul > ul > ul > li > i{
+    background-image: url(../../src/receita/torta_limao_item3.gif);
+    background-repeat: no-repeat;
+    background-size: auto;
+}

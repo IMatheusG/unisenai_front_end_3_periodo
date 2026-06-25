@@ -1,0 +1,138 @@
+body{            
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+main{
+    padding: 1rem 2rem;
+    padding-bottom: 0px;
+}    
+h1{
+    color: #5d4600;
+}
+h2,h3,h4,h5,h6{
+    color: #d4a000;
+}
+h2{
+    font-size: 1.3rem;
+}
+h3{
+    font-size: 1.15rem;
+}
+p{  
+    text-indent: 32px;
+}
+hr{            
+    border: 1px solid black;
+    width: 100%;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;            
+    flex-wrap: wrap;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+header .imgs{                   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header img{
+    width: 20%;            
+    height: 150px;     
+}
+header h1{
+    background-color: black;
+    color: white;
+    border-bottom: 10px solid #8a9a60;
+    padding: 1rem;
+    margin-top: 0px;
+}
+.conteudo{
+    display: flex;
+}
+.links{
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 1rem;
+    padding-right: 1rem;
+}
+.links a{
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;           
+    padding-bottom: 0.5rem;             
+}
+.links a:hover{
+    text-decoration: underline;            
+}
+.conteudo_principal{
+    /* display: flex; */
+    width: 60%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0px 1rem;
+}
+.conteudo_principal h1{
+    margin-top: 0px;
+}        
+.conteudo_principal i{
+    width: 100%;
+    display: block;
+    margin-bottom: 2rem;
+}        
+.conteudo_principal img{
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}        
+.conteudo_principal p:first-of-type{
+    font-size: 12px;
+    font-weight: 600;
+}
+.conteudo_principal p{
+    text-indent: 0px;
+    text-align: justify;
+}        
+.noticias{
+    width: 20%;
+    padding-left: 1rem;
+}
+.noticias p:first-of-type{
+    font-size: 10px;
+    color: #8a9a60;
+    font-weight: 600;        
+}
+.noticias h2{
+    text-indent: 0px;
+    margin-bottom: 0px;
+    font-size: 1.1rem;
+}        
+.noticias p{
+    text-indent: 0px;
+    font-size: 12px;
+}        
+.noticias a{
+    width: 100%;
+    display: block;
+    text-align: end;
+}
+footer{
+    background-color: black;
+    color: white;
+    border-top: 10px solid #8a9a60;
+    padding: 1rem;
+    margin-top: 0px;
+    text-align: center;
+    margin-top: 1rem;
+}

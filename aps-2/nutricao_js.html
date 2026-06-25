@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="./css/nutricao/style.css"> -->
+        <script src="./js/nutricao.js"></script>
+        <title>Aparecida Nutrição</title>
+    </head> 
+    <style>
+        body{            
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        main{
+            padding: 1rem 3rem;
+        }
+        h1{
+            color: #5d4600;
+        }
+        h2,h3,h4,h5,h6{
+            color: #d4a000;
+        }
+        h2{
+            font-size: 1.3rem;
+        }
+        h3{
+            font-size: 1.15rem;
+        }
+        p{  
+            text-indent: 32px;
+        }
+        hr{            
+            border: 1px solid black;
+            width: 100%;
+        }
+
+        header{
+            background-color: #333;
+            padding: 3rem;
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        table{            
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #ccc;
+        }
+
+        thead th {
+            background-color: #ccc;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 10px 16px;
+            text-align: left;
+        }
+
+        tbody td {
+            padding: 10px 16px;
+            text-align: left;
+            font-size: 14px;
+        }
+        tbody tr {
+            border-bottom: 1px solid #ccc;
+        }
+
+        form{            
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 4%;
+            flex-wrap: wrap;
+        }
+        .input{
+            width: 100%;
+            display: flex;           
+            flex-wrap: wrap;
+            /* gap: 0.5rem;  */
+            padding: 0.5rem;
+            max-width: 46%;
+        }
+        .input label, .input input{
+            width: 100%;
+        }
+        .input label{      
+            padding: 0.5rem 0px;
+        }          
+        .input input{                
+            padding: 0.5rem;
+        }
+        button{
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #ccc;
+            color: black;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+        button:hover{
+            background-color: #cccc;
+            font-weight: bold;
+        }
+        
+        .erros {            
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .erros b{
+            color: #c00;
+            font-size: 17px;
+            background: #c000002f;
+            width: max-content;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #c00;
+        }
+    </style>
+    <body>  
+        <a href="./index.html">Home</a> <br><br>
+        <header>Aparecida Nutrição</header>
+        <main>                        
+            <h1>Meus Pacientes</h1>
+            <hr>
+
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Peso (Kg)</th>
+                        <th>Altura (m)</th>
+                        <th>Gordura Corporal (%)</th>                        
+                        <th>IMC</th>                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="nome">Paulo</td>
+                        <td class="peso">100</td>
+                        <td class="altura">2.00</td>
+                        <td class="gordura">10</td>
+                        <td class="imc">25</td>
+                    </tr>
+                    <tr>
+                        <td class="nome">João</td>
+                        <td class="peso">80</td>
+                        <td class="altura">1.72</td>
+                        <td class="gordura">40</td>
+                        <td class="imc">27.04</td>
+                    </tr>
+                    <tr>
+                        <td class="nome">Erica</td>
+                        <td class="peso">54</td>
+                        <td class="altura">1.64</td>
+                        <td class="gordura">14</td>
+                        <td class="imc">20.08</td>
+                    </tr>
+                    <tr>
+                        <td class="nome">Douglas</td>
+                        <td class="peso">85</td>
+                        <td class="altura">1.73</td>
+                        <td class="gordura">24</td>
+                        <td class="imc">28.40</td>
+                    </tr>
+                    <tr>
+                        <td class="nome">Tatiana</td>
+                        <td class="peso">46</td>
+                        <td class="altura">1.55</td>
+                        <td class="gordura">19</td>
+                        <td class="imc">19.15</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h1>Adicionar novo paciente</h1>
+            <hr>
+            <div id="erros" class="erros"></div>
+            <form>
+                <div class="input" >    
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="João da Silva" required>
+                </div>
+                <div class="input" >
+                    <label for="peso">Peso (kg)</label>
+                    <input type="text" name="peso" id="peso" placeholder="85.5" required>
+                </div>
+                <div class="input" >    
+                    <label for="altura">Altura (m)</label>
+                    <input type="text" name="altura" id="altura" placeholder="1.60" required>
+                </div>
+                <div class="input" >
+                    <label for="gordura">Gordura (%)</label>
+                    <input type="text" name="gordura" id="gordura" placeholder="20" required>
+                </div>
+                <div class="input">
+                    <button type="button" id="adicionar">Adicionar</button>
+                </div>
+            </form>
+        </main>        
+    </body>
+</html>

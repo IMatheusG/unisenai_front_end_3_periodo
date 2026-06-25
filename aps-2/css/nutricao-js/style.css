@@ -1,0 +1,57 @@
+body{            
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+main{
+    padding: 1rem 3rem;
+}
+h1{
+    color: #5d4600;
+}
+h2,h3,h4,h5,h6{
+    color: #d4a000;
+}
+h2{
+    font-size: 1.3rem;
+}
+h3{
+    font-size: 1.15rem;
+}
+p{  
+    text-indent: 32px;
+}
+hr{            
+    border: 1px solid black;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    background-color: #333;
+    padding: 3rem;
+    color: white;
+    font-size: 1.8rem;
+}
+
+table{            
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+thead th {
+    background-color: #ccc;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 16px;
+    text-align: left;
+}
+
+tbody td {
+    padding: 10px 16px;
+    text-align: left;
+    font-size: 14px;
+}
+tbody tr {
+    border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,81 @@
+body{            
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: gainsboro;
+}
+main{            
+    padding: 1rem 0px;
+}    
+h1{
+    color: #5d4600;
+}
+h2,h3,h4,h5,h6{
+    color: #d4a000;
+}
+h2{
+    font-size: 1.3rem;
+}
+h3{
+    font-size: 1.15rem;
+}
+p{  
+    text-indent: 32px;
+}
+hr{            
+    border: 1px solid black;
+    width: 100%;
+}
+header{ 
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-bottom: 2rem;
+}
+.titulo{
+    width: 400px;
+    right: 0;
+    text-align: center;            
+    border-bottom-left-radius: 2rem;
+    background-color: rgba(168, 126, 0, 0.451);            
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.titulo a{
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #5d4600;
+    cursor: pointer;
+    border-radius: 0.5rem;            
+    color: #5d4600;
+    text-decoration: none;
+}
+
+.aviso{
+    padding: 0.5rem 1rem; 
+    background-color: #5d4600;
+    color: white;        
+    margin-bottom: 1rem;  
+    font-size: 1.4rem; 
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4%;
+    padding: 1rem;
+}
+.card{
+    width: 48%;
+    background-color: rgb(168 126 0 / 15%);
+}
+.conteudo{
+    padding: 1rem;
+}
+img{            
+    float: left;
+    width: 105px;
+    margin-right: 20px;
+}

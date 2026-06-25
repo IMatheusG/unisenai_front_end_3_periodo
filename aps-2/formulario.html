@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/formulario/style.css">
+        <title>Formulário</title>
+    </head>   
+    <body>  
+        <main>
+            <a href="./index.html">Home</a> <br><br>
+            <hr>
+            <h1 style="text-align: right;">Dados da conta</h1>
+            <div class="conteudo">
+                <h1 style="transform: rotate(180deg); writing-mode: vertical-rl; text-align: end;">Formulário</h1>
+                <form>
+                    <fieldset>
+                        <legend>Dados Pessoais:</legend>
+                        <div class="input">
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" id="nome" placeholder="João da Silva" required>
+                        </div>                        
+                        <div class="input">
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" placeholder="joao@gmail.com" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Dados da Conta:</legend>
+                        <div class="input">
+                            <label for="senha">Senha:</label>
+                            <input type="password" name="senha" id="senha" placeholder="123" required>
+                        </div>
+                        <div class="input">
+                            <label for="frase_opcional">Frase opcional:</label>
+                            <textarea name="frase_opcional" id="frase_opcional" rows="4" style="resize:none;"></textarea>
+                        </div>
+                    </fieldset>
+                    <div style="width: 100%;">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </main>        
+    </body>
+</html>
